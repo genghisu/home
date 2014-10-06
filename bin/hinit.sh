@@ -1,8 +1,8 @@
 #!/bin/sh -x
 
-USER=finalmente
+USER=hxu
 THOME=/tmp/$USER
-HOME=/home/finalmente
+HOME=/home/$USER
 
 #### Main Setup
 sudo mkdir $THOME
@@ -18,8 +18,8 @@ git clone git://github.com/sstephenson/ruby-build.git $THOME/.rbenv/plugins/ruby
 cd $THOME/.dotfiles/
 git submodule update --init --recursive >/dev/null
 
-rsync -avtz --delete $THOME/ $HOME/
-rm -rf $THOME
+#rsync -avtz --delete $THOME/ $HOME/
+#rm -rf $THOME
 
 # symlinks
 chown -Rh $USER $HOME
