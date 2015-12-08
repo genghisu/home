@@ -25,6 +25,7 @@
 	email = genghisu@gmail.com 
 [core]
 	pager = cat
+    editor = vim
 
 [remote "origin"]
   fetch = +refs/pull/*/head:refs/remotes/origin/pr/*
