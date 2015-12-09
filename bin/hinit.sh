@@ -7,7 +7,7 @@ HOME=/home/$USER
 #### Ubuntu Package Installation
 sudo apt-get update
 sudo apt-get upgrade
-sudo apt-get install python3 git vim build-essential
+sudo apt-get install python3 git vim build-essential zsh
 
 #### Main Setup
 sudo mkdir $THOME
@@ -23,5 +23,6 @@ git clone https://github.com/VundleVim/Vundle.vim.git $THOME/.vim/bundle/Vundle.
 chown -Rh $USER $HOME
 
 grep -lR $THOME $HOME |xargs perl -pi -e "s,$THOME,$HOME,g"
+chsh -s /bin/zsh
 
 echo "Done"
