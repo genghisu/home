@@ -24,5 +24,5 @@ chown -Rh $USER $HOME
 
 grep -lR $THOME $HOME |xargs perl -pi -e "s,$THOME,$HOME,g"
 chsh -s /bin/zsh
-
+git config --global core.excludesfile ~/.gitignore
 echo "Done"
