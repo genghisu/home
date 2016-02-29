@@ -60,8 +60,14 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'vim-scripts/mru.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'klen/python-mode'
 
 call vundle#end()
 filetype plugin indent on
 
 map L :NERDTreeToggle<cr>
+let g:pymode_quickfix_minheight = 3
+let g:pymode_quickfix_maxheight = 6
+let g:pymode_folding = 0
+let g:pymode_lint = 0

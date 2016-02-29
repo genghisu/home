@@ -16,8 +16,8 @@ git clone https://github.com/genghisu/home.git       $THOME
 git clone https://github.com/genghisu/oh-my-zsh.git  $THOME/.oh-my-zsh
 git clone https://github.com/VundleVim/Vundle.vim.git $THOME/.vim/bundle/Vundle.vim
 
-#rsync -avtz --delete $THOME/ $HOME/
-#rm -rf $THOME
+rsync -avtz --delete $THOME/ $HOME/
+rm -rf $THOME
 
 # symlinks
 chown -Rh $USER $HOME
